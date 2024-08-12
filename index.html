@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolob Enterprise - Computer and Networking Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kolob Enterprise</h1>
+        <p>Showcasing the Best in Computers and Networking</p>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Example Images -->
+                <div class="gallery-item">
+                    <img src="/static/images/computer1.jpg" alt="Computer Image 1">
+                    <p>High-Performance Desktop</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/images/network1.jpg" alt="Networking Image 1">
+                    <p>Advanced Network Switch</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kolob Enterprise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
